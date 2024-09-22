@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 17:40:34 by abigamas          #+#    #+#             */
-/*   Updated: 2024/09/22 12:53:19 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/09/22 13:47:23 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,10 @@ void    sa(t_stack **stack);
 void    sb(t_stack **stack);
 void    pa(t_stack **source, t_stack **dest);
 void    pb(t_stack **source, t_stack **dest);
+void	ra(t_stack **stack);
+void	rb(t_stack **stack);
+
+
 
 //UTILS
 void	free_stack(t_stack **stack);

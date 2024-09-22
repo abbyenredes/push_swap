@@ -2,7 +2,8 @@
 SRC =	src/main.c\
 		src/create_stack.c\
 		src/swap.c\
-		src/push.c
+		src/push.c\
+		src/rotate.c
 
 UTILS = src/utils/free_stack.c \
 		src/utils/print_stacks.c \
