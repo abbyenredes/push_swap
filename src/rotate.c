@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 13:21:56 by abigamas          #+#    #+#             */
-/*   Updated: 2024/09/22 13:46:07 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/09/24 21:04:15 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,21 @@ static void	rotate(t_stack **stack)
     
 }
 
-void	ra(t_stack **stack)
+void	ra(t_stack **stack_a)
 {
-    rotate(stack);
+    rotate(stack_a);
     ft_printf("ra\n");
 }
 
-void	rb(t_stack **stack)
+void	rb(t_stack **stack_b)
 {
-    rotate(stack);
+    rotate(stack_b);
     ft_printf("rb\n");
+}
+
+void	rrr(t_stack **stack_a, t_stack **stack_b)
+{
+    rotate(stack_a);
+    rotate(stack_b);
+    ft_printf("rrr\n");
 }
