@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 13:21:56 by abigamas          #+#    #+#             */
-/*   Updated: 2024/09/24 21:04:15 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/09/25 17:47:41 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ void	rb(t_stack **stack_b)
     ft_printf("rb\n");
 }
 
-void	rrr(t_stack **stack_a, t_stack **stack_b)
+void	rr(t_stack **stack_a, t_stack **stack_b)
 {
     rotate(stack_a);
     rotate(stack_b);
-    ft_printf("rrr\n");
+    ft_printf("rr\n");
 }
