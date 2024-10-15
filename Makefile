@@ -2,13 +2,17 @@
 SRC =	src/main.c\
 		src/create_stack.c\
 		src/sorting_numbers.c\
+		src/parse.c\
+
 
 UTILS = src/utils/free_stack.c \
 		src/utils/print_stacks.c \
 		src/utils/stack_add_back.c \
 		src/utils/stack_new.c \
 		src/utils/is_it_order.c \
-		src/utils/get_stack_size.c
+		src/utils/get_stack_size.c \
+		src/utils/ft_free.c
+
 
 OPERATIONS =	src/operations/swap.c\
 				src/operations/push.c\

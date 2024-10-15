@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 17:27:48 by abigamas          #+#    #+#             */
-/*   Updated: 2024/09/25 19:06:33 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/15 03:30:05 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,11 @@ int main(int argc, char *argv[])
 
 	stack_a = NULL;
 	stack_b = NULL;
+	
 	if (argc <= 2)
-		return (1);
+		ft_error(&stack_a);
 	create_stack(&stack_a, argv);
+	if (check_list(stack_a))
 	print_stacks(stack_a, stack_b);
 
 	sorting_numbers(&stack_a, &stack_b);

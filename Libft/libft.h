@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 17:46:54 by abigamas          #+#    #+#             */
-/*   Updated: 2024/08/29 03:25:50 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/15 02:21:17 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strtrim(char const *s1, char const *set);
 int	ft_printf(char const *str, ...);
+long	ft_atoll(const char *str);
 size_t	ft_putstr(char *str);
 size_t	ft_putchar(char c);
 size_t	ft_putnbr_unsigned(unsigned int n, size_t *i);

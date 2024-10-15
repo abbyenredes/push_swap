@@ -6,12 +6,16 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:07:04 by abigamas          #+#    #+#             */
-/*   Updated: 2024/09/25 20:06:09 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/15 03:46:30 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
+void	order_two_num(t_stack **stack)
+{
+	sa(stack);
+}
 
 void    order_three_num(t_stack **stack)
 {
@@ -40,6 +44,8 @@ void    sorting_numbers(t_stack **stack_a, t_stack **stack_b)
 
 	(void)stack_b;
 	len = get_stack_size(*stack_a);
-	if (len <= 3)
+	if (len == 2)
+		order_two_num(stack_a);
+	else if (len == 3)
 		order_three_num(stack_a);
 }

@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 17:40:34 by abigamas          #+#    #+#             */
-/*   Updated: 2024/09/25 19:32:59 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/15 03:20:56 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,11 @@ void	rra(t_stack **stack_a);
 void	rrb(t_stack **stack_b);
 void	rrr(t_stack **stack_a, t_stack **stack_b);
 
+//Parse
+int		is_repeated(t_stack *lst);
+int		is_ordered(t_stack *lst);
+int		check_list(t_stack *lst);
+void	ft_error(t_stack **lst);
 
 //UTILS
 void	free_stack(t_stack **stack);
@@ -45,6 +50,8 @@ void	stack_add_back(t_stack **head, t_stack *node);
 t_stack *stack_new(int value);
 int		get_stack_size(t_stack *stack);
 int		is_it_order(t_stack *stack);
+void	ft_free(char **str);
+
 
 
 #endif

@@ -44,7 +44,8 @@ SRC = ft_isalpha.c\
 	  ft_putnbr.c\
 	  ft_putnbr_unsigned.c\
 	  ft_putnbr_hex.c\
-	  ft_hex_pointer.c
+	  ft_hex_pointer.c\
+	  ft_atoll.c
 
 BSRC=  ft_lstnew.c\
 	   ft_lstadd_front.c\
