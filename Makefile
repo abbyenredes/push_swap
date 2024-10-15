@@ -3,6 +3,7 @@ SRC =	src/main.c\
 		src/create_stack.c\
 		src/sorting_numbers.c\
 		src/parse.c\
+		src/hardcode.c 
 
 
 UTILS = src/utils/free_stack.c \
@@ -11,8 +12,8 @@ UTILS = src/utils/free_stack.c \
 		src/utils/stack_new.c \
 		src/utils/is_it_order.c \
 		src/utils/get_stack_size.c \
-		src/utils/ft_free.c
-
+		src/utils/ft_free.c \
+		src/utils/stack_last.c
 
 OPERATIONS =	src/operations/swap.c\
 				src/operations/push.c\

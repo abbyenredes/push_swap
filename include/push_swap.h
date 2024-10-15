@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 17:40:34 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/15 03:20:56 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/15 14:20:56 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,13 @@ void	rra(t_stack **stack_a);
 void	rrb(t_stack **stack_b);
 void	rrr(t_stack **stack_a, t_stack **stack_b);
 
+//Hardcode
+int	get_smallest(t_stack *lst);
+void	order_two_num(t_stack **stack);
+void    order_three_num(t_stack **stack);
+void	order_four_num(t_stack **lst, t_stack **b);
+void	order_five_num(t_stack **lst, t_stack **b);
+
 //Parse
 int		is_repeated(t_stack *lst);
 int		is_ordered(t_stack *lst);
@@ -51,7 +58,7 @@ t_stack *stack_new(int value);
 int		get_stack_size(t_stack *stack);
 int		is_it_order(t_stack *stack);
 void	ft_free(char **str);
-
+t_stack	*stack_last(t_stack *lst);
 
 
 #endif

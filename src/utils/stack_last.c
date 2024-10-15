@@ -1,30 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sorting_numbers.c                                  :+:      :+:    :+:   */
+/*   stack_last.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 19:07:04 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/15 14:23:11 by abigamas         ###   ########.fr       */
+/*   Created: 2024/10/15 14:14:25 by abigamas          #+#    #+#             */
+/*   Updated: 2024/10/15 14:14:56 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/push_swap.h"
+#include "../../include/push_swap.h"
 
-void    sorting_numbers(t_stack **stack_a, t_stack **stack_b)
+t_stack	*stack_last(t_stack *lst)
 {
-	int len;
-
-	(void)stack_b;
-	len = get_stack_size(*stack_a);
-	if (len == 2)
-		order_two_num(stack_a);
-	else if (len == 3)
-		order_three_num(stack_a);
-	else if (len == 4)
-		order_four_num(stack_a, stack_b);
-	else if (len == 5)
-		order_five_num(stack_a, stack_b);
-
+	if (!lst)
+		return (NULL);
+	while (lst->next != NULL)
+	{
+		lst = lst->next;
+	}
+	return (lst);
 }
