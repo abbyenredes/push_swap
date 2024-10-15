@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/22 11:59:33 by abigamas          #+#    #+#             */
-/*   Updated: 2024/09/22 12:00:43 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/15 19:01:41 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ t_stack *stack_new(int value)
 	if (!new_node)
 		return (NULL);
 	new_node->value = value;
+	new_node->index = 0;
 	new_node->next = NULL;
 	return (new_node);
 }

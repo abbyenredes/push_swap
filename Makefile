@@ -3,7 +3,8 @@ SRC =	src/main.c\
 		src/create_stack.c\
 		src/sorting_numbers.c\
 		src/parse.c\
-		src/hardcode.c 
+		src/hardcode.c \
+		src/check_digits.c 
 
 
 UTILS = src/utils/free_stack.c \

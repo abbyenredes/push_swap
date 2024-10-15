@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 17:40:34 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/15 14:20:56 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/15 19:01:03 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 typedef struct s_stack
 {
 	int	value;
+	int	index;
 	struct s_stack *next;
 } t_stack ;
 
@@ -49,6 +50,8 @@ int		is_repeated(t_stack *lst);
 int		is_ordered(t_stack *lst);
 int		check_list(t_stack *lst);
 void	ft_error(t_stack **lst);
+void	check_digits(char **argv);
+
 
 //UTILS
 void	free_stack(t_stack **stack);
