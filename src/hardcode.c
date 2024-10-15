@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 14:04:51 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/15 14:39:59 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/15 19:28:31 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void	order_four_num(t_stack **lst, t_stack **b)
 		ra(lst);
 	pb(lst, b);
 	order_three_num(lst);
-	pa(lst, b);
+	pa(b, lst);
 }
 
 void	order_five_num(t_stack **lst, t_stack **b)
@@ -75,5 +75,5 @@ void	order_five_num(t_stack **lst, t_stack **b)
 	}
 	pb(lst, b);
 	order_four_num(lst, b);
-	pa(lst, b);
+	pa(b, lst);
 }

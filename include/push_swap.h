@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 17:40:34 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/15 19:01:03 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/15 20:18:22 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ typedef struct s_stack
 //SRC
 void	create_stack(t_stack **head, char **arguments);
 void    sorting_numbers(t_stack **stack_a, t_stack **stack_b);
-
+void 	add_index(t_stack **stack);
 
 //Operations
 void    sa(t_stack **stack);

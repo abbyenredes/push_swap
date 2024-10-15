@@ -50,9 +50,9 @@ int	check_list(t_stack *lst)
 	if (is_ordered(lst))
 	{
 		free_stack(&lst);
-		exit(0);
+		exit(EXIT_SUCCESS);
 	}
-	return (1);
+	return (EXIT_FAILURE);
 }
 
 void	ft_error(t_stack **lst)
