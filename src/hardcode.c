@@ -6,58 +6,11 @@
 /*   By: abigamas <abigamas@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 14:04:51 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/26 12:18:18 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/26 12:50:47 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
-
-int	get_smallest(t_stack *lst)
-{
-	int	min_val;
-
-	min_val = INT_MAX;
-	while (lst)
-	{
-		if (lst->value < min_val)
-			min_val = lst->value;
-		lst = lst->next;
-	}
-	return (min_val);
-}
-
-int	get_biggest(t_stack *lst)
-{
-	int	max_val;
-
-	max_val = INT_MIN;
-	while (lst)
-	{
-		if (lst->value > max_val)
-			max_val = lst->value;
-		lst = lst->next;
-	}
-	return (max_val);
-}
-
-
-int	get_pos_biggest(t_stack *lst)
-{
-	int	max_val;
-	int	pos;
-
-	pos = 0;
-	max_val = INT_MIN;
-	while (lst)
-	{
-		if (lst->value > max_val)
-			max_val = lst->value;
-		lst = lst->next;
-		pos++;
-	}
-	return (pos);
-}
-
 
 void	order_two_num(t_stack **stack)
 {

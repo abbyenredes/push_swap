@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abigamas <abigamas@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 17:40:34 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/15 20:18:22 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/26 13:29:07 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ typedef struct s_stack
 //SRC
 void	create_stack(t_stack **head, char **arguments);
 void    sorting_numbers(t_stack **stack_a, t_stack **stack_b);
-void 	add_index(t_stack **stack);
 
 //Operations
 void    sa(t_stack **stack);
@@ -39,7 +38,6 @@ void	rrb(t_stack **stack_b);
 void	rrr(t_stack **stack_a, t_stack **stack_b);
 
 //Hardcode
-int	get_smallest(t_stack *lst);
 void	order_two_num(t_stack **stack);
 void    order_three_num(t_stack **stack);
 void	order_four_num(t_stack **lst, t_stack **b);
@@ -62,6 +60,10 @@ int		get_stack_size(t_stack *stack);
 int		is_it_order(t_stack *stack);
 void	ft_free(char **str);
 t_stack	*stack_last(t_stack *lst);
+int		t_sqrt(int num);
+int	get_smallest(t_stack *lst);
+int	get_biggest(t_stack *lst);
+int get_stack_size(t_stack *stack);
 
 
 #endif

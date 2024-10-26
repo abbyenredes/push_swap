@@ -4,7 +4,6 @@ SRC =	src/main.c \
 		src/sorting_numbers.c \
 		src/check_list.c \
 		src/hardcode.c \
-		src/add_index.c \
 		src/check_digits.c 
 
 
@@ -15,7 +14,11 @@ UTILS = src/utils/free_stack.c \
 		src/utils/is_it_order.c \
 		src/utils/get_stack_size.c \
 		src/utils/ft_free.c \
-		src/utils/stack_last.c
+		src/utils/stack_last.c \
+		src/utils/get_smallest.c \
+		src/utils/get_biggest.c \
+		src/utils/get_pos_biggest.c \
+		src/utils/ft_sqrt.c
 
 OPERATIONS =	src/operations/swap.c\
 				src/operations/push.c\

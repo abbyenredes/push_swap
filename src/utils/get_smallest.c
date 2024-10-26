@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*   get_smallest.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abigamas <abigamas@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/26 12:20:23 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/26 16:04:52 by abigamas         ###   ########.fr       */
+/*   Created: 2024/10/26 12:42:00 by abigamas          #+#    #+#             */
+/*   Updated: 2024/10/26 12:42:54 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/push_swap.h"
 
-int ft_sqrt(int num)
+int	get_smallest(t_stack *lst)
 {
-    int result;
-    int i;
+	int	min_val;
 
-    i = 0;
-    while (i * i < num)
-    {
-        result = i;
-        i++;
-    }
-    return (result);
+	min_val = INT_MAX;
+	while (lst)
+	{
+		if (lst->value < min_val)
+			min_val = lst->value;
+		lst = lst->next;
+	}
+	return (min_val);
 }
