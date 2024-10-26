@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   add_index.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abigamas <abigamas@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 19:51:33 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/15 20:23:17 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/26 12:16:38 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ static int *create_array(t_stack *list, int	*size)
 	return(array);
 }
 
-void mini_bubble(int **array, int size)
+/* void mini_bubble(int **array, int size)
 {
 	int i;
 	int j;
@@ -81,7 +81,7 @@ void	add_index(t_stack **list)
 	mini_bubble(&array, size);
 
 	
-	printf("DEspues\n");
+	printf("Despues\n");
 	i = 0;
 	while (i < size)
 	{
@@ -90,4 +90,4 @@ void	add_index(t_stack **list)
 	
 
 	free(array);
-}
+} */

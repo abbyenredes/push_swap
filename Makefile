@@ -1,8 +1,8 @@
 
-SRC =	src/main.c\
-		src/create_stack.c\
-		src/sorting_numbers.c\
-		src/parse.c\
+SRC =	src/main.c \
+		src/create_stack.c \
+		src/sorting_numbers.c \
+		src/check_list.c \
 		src/hardcode.c \
 		src/add_index.c \
 		src/check_digits.c 
