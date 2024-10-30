@@ -4,8 +4,8 @@ SRC =	src/main.c \
 		src/sorting_numbers.c \
 		src/check_list.c \
 		src/hardcode.c \
-		src/check_digits.c 
-
+		src/check_digits.c \
+		src/ksort_algorithm.c 
 
 UTILS = src/utils/free_stack.c \
 		src/utils/print_stacks.c \

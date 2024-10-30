@@ -6,52 +6,74 @@
 /*   By: abigamas <abigamas@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 12:51:59 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/26 14:42:30 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/30 15:06:29 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
 
-
-
-void	ksort(t_stack *stack_a, t_stack *stack_b)
+void	k_sort1(t_stack **stack_a, t_stack **stack_b, int length)
 {
-	int		pivot;
-	int		movements;
-	long	max;
+	int	i;
+	int	range;
 
-	pivot = ft_sqrt(get_stack_size(stack_a));
-	movements = 0;
-	pass_to_b(stack_a, pivot, &movements);
-	while (stack_b != NULL)
+	i = 0;
+	range = ft_sqrt(length) * 7 / 5;
+	while ((*stack_a))
 	{
-		max = find_max(stack_b);
-		pass_to_a(stack_a, max);
+		if ((*stack_a)->index <= i)
+		{
+			pb(stack_b, stack_a);
+			printf("----> entre");
+			if (get_stack_size(*stack_b) > 1)
+				rb(stack_b);
+			i++;
+		}
+		else if ((*stack_a)->index <= i + range)
+		{
+			pb(stack_b, stack_a);
+			i++;
+		}
+		else
+			ra(stack_a);
 	}
 }
 
-void	pass_to_a(t_stack *stack_a, t_stack *stack_b, int max)
+void	k_sort2(t_stack **stack_a, t_stack **stack_b, int length)
 {
-	int	weight;
+	int	rb_count;
+	int	rrb_count;
 
-	weight = get_weight(stack_b, max);
-	if (weight == 1)
-		swap(&(stack_b), 'b', 'y');
-	else if (weight > 1)
+	while (length - 1 >= 0)
 	{
-		while (weight > 0)
+		rb_count = count_r(*stack_b, length - 1);
+		rrb_count = length - rb_count;
+		if (rb_count <= rrb_count)
 		{
-			rotate(&(stack_b), 'b', 'y');
-			weight--;
+			while ((*stack_b)->index != length - 1)
+				rb(stack_b);
+			pa(stack_a, stack_b);
+			length--;
+		}
+		else
+		{
+			while ((*stack_b)->index != length - 1)
+				rrb(stack_b);
+			pa(stack_a, stack_b);
+			length--;
 		}
 	}
-	else if (weight < 0)
+}
+
+int	count_r(t_stack *stack, int index)
+{
+	int	counter;
+
+	counter = 0;
+	while (stack && stack->index != index)
 	{
-		while (weight < 0)
-		{
-			reverse_rotate(&(stack_b), 'b', 'y');
-			weight++;
-		}
+		stack = stack->next;
+		counter++;
 	}
-	push(&(stack_b), &(stack_a), 'a');
+	return (counter);
 }

@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:07:04 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/26 13:30:54 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/10/30 13:42:50 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,11 @@ void    sorting_numbers(t_stack **stack_a, t_stack **stack_b)
 		order_four_num(stack_a, stack_b);
 	else if (len == 5)
 		order_five_num(stack_a, stack_b);
-	//else if (len > 5)
-		//ksort();
+	else if (len > 5)
+	{
+		k_sort1(stack_a, stack_b, get_stack_size(*stack_a));
+        k_sort2(stack_b, stack_b, get_stack_size(*stack_b));
+    }   
 	else
 		ft_error(stack_a);
 }
