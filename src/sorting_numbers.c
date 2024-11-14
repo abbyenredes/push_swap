@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 19:07:04 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/30 13:42:50 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/11/14 16:10:26 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void    sorting_numbers(t_stack **stack_a, t_stack **stack_b)
 {
 	int len;
 
-	(void)stack_b;
-	len = get_stack_size(*stack_a);
+	//(void)stack_b;
+	len = get_stack_size(stack_a);
 	if (len == 2)
 		order_two_num(stack_a);
 	else if (len == 3)

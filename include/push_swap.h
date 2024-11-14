@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 17:40:34 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/30 13:51:50 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/11/14 16:13:09 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,14 +61,12 @@ void	free_stack(t_stack **stack);
 void	print_stacks(t_stack *stack_a, t_stack *stack_b);
 void	stack_add_back(t_stack **head, t_stack *node);
 t_stack *stack_new(int value);
-int		get_stack_size(t_stack *stack);
+int		get_stack_size(t_stack **stack);
 int		is_it_order(t_stack *stack);
 void	ft_free(char **str);
 t_stack	*stack_last(t_stack *lst);
 int		ft_sqrt(int num);
 int	get_smallest(t_stack *lst);
 int	get_biggest(t_stack *lst);
-int get_stack_size(t_stack *stack);
-
 
 #endif

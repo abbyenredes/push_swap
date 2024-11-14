@@ -2,5 +2,6 @@
     "files.associations": {
         "push_swap.h": "c",
         "random": "c"
-    }
+    },
+    "cmake.sourceDirectory": "/home/abigamas/push_swap/push_swap_visualizer"
 }
