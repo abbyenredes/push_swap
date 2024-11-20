@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abigamas <abigamas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: abigamas <abigamas@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 20:12:40 by abigamas          #+#    #+#             */
-/*   Updated: 2024/09/25 18:35:48 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:43:00 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

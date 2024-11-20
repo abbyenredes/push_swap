@@ -6,7 +6,7 @@
 /*   By: abigamas <abigamas@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 12:51:59 by abigamas          #+#    #+#             */
-/*   Updated: 2024/10/30 15:06:29 by abigamas         ###   ########.fr       */
+/*   Updated: 2024/11/14 17:51:15 by abigamas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	k_sort1(t_stack **stack_a, t_stack **stack_b, int length)
 	{
 		if ((*stack_a)->index <= i)
 		{
-			pb(stack_b, stack_a);
+			pb(stack_a, stack_b);
 			printf("----> entre");
 			if (get_stack_size(*stack_b) > 1)
 				rb(stack_b);
@@ -31,11 +31,12 @@ void	k_sort1(t_stack **stack_a, t_stack **stack_b, int length)
 		}
 		else if ((*stack_a)->index <= i + range)
 		{
-			pb(stack_b, stack_a);
+			pb(stack_a, stack_b);
 			i++;
 		}
 		else
-			ra(stack_a);
+			ra(stack_a); 
+
 	}
 }
 
@@ -57,9 +58,14 @@ void	k_sort2(t_stack **stack_a, t_stack **stack_b, int length)
 		}
 		else
 		{
+			ft_printf("-----ingrese en else---");
 			while ((*stack_b)->index != length - 1)
+			{
 				rrb(stack_b);
-			pa(stack_a, stack_b);
+				ft_printf("-----ingrese en while---");
+					
+			}
+			pa(stack_b, stack_a);
 			length--;
 		}
 	}
